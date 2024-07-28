@@ -23,7 +23,7 @@ const HomeView = () => {
             }}>
                 <button className='main-button' onClick={() => n("/brev")}>🎁 1</button>
                 <button className='main-button' onClick={() => n("/restaurang")}>🎁 2</button>
-                <button className='main-button' onClick={() => n("/mystery")}>🎁 3</button>
+                <button className='main-button' onClick={() => n("/blommor")}>🎁 3</button>
             </nav>
 
             <div style={{
@@ -34,8 +34,8 @@ const HomeView = () => {
                 justifyContent: "center"
 
             }}>
-                {!showPic && (<button onClick={() => setShowPic(true)} style={{
-                }}>Tryck för att visa framtiden</button>
+                {!showPic && (<button className='main-button' onClick={() => setShowPic(true)} style={{
+                }}>👻 Tryck för att visa framtiden 👻</button>
                 )}
 
             </div>

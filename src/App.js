@@ -14,7 +14,7 @@ function App() {
           <Route path='/' element={<HomeView />} />
           <Route path='/brev' element={<Letter />} />
           <Route path='/restaurang' element={<Restaurant />} />
-          <Route path='/mystery' element={<Mystery />} />
+          <Route path='/blommor' element={<Mystery />} />
         </Routes>
       </BrowserRouter>
     </div>
