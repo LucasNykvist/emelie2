@@ -9,16 +9,18 @@ const Mystery = () => {
 
     return (
         <div className='main-container'>
-            <h1>Såklart!</h1>
-            <p>En vacker dam som du ska såklart få... </p>
 
-            {!show && <button onClick={() => setShow(true)} className='main-button'>Trycka för att visa</button> }
+            {!show && <div><h1>Såklart!</h1>
+                <p>En vacker dam som du ska såklart få... </p> </div>}
 
-            
+
+            {!show && <button onClick={() => setShow(true)} className='main-button'>Trycka för att visa</button>}
+
+
 
             {show && (
                 <>
-                    <h3>BLOMMOR!</h3>
+                    <h1>BLOMMOR!</h1>
                     <p>*Du får såklart riktiga blommor också, inte bara digitala.</p>
                     <img width={"100%"} src={flowers}></img>
                 </>)}
@@ -26,7 +28,7 @@ const Mystery = () => {
 
 
 
-            <button className='main-button' onClick={() => n("/")} >Tillbaka</button>
+            <button style={{ marginTop: "1rem" }} className='main-button' onClick={() => n("/")} >Tillbaka</button>
         </div>
     )
 }

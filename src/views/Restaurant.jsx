@@ -9,19 +9,23 @@ const Restaurant = () => {
 
     return (
         <div className='main-container'>
-            <h1>Din nästa present... smakar mycket gott!</h1>
+
+            {!isClicked &&             <h1>Din nästa present... smakar mycket gott!</h1>
+            }
 
             <div style={{
                 display: "flex",
                 flexDirection: "column"
             }}>
 
-                <button className='main-button' onClick={() => setIsClicked(true)} >Tryck här för att se vart vi ska!</button>
+                {!isClicked &&                 <button className='main-button' onClick={() => setIsClicked(true)} >Tryck här för att se vart vi ska!</button>
+            }
+
 
 
                 {isClicked && (
                     <>
-                        <h2>MMMMM WOOOW! GOTTTTTTT, OXFILÈEEEEE!!</h2>
+                        <h1>MMMMM WOOOW! GOTTTTTTT, OXFILÈEEEEE!!</h1>
                         <img style={{
                             width: "100%",
                             maxWidth: "900px"
