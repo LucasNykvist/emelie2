@@ -26,7 +26,7 @@ const Restaurant = () => {
                 {isClicked && (
                     <>
                         <h1>MMMMM WOOOW! GOTTTTTTT, OXFILÈEEEEE!!</h1>
-                        <img style={{
+                        <img alt='' style={{
                             width: "100%",
                             maxWidth: "900px"
                         }} src={bs} ></img>

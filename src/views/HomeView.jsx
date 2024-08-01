@@ -41,7 +41,7 @@ const HomeView = () => {
             </div>
 
 
-            {showPic && (<img style={{
+            {showPic && (<img alt='' style={{
                 marginTop: "2rem"
             }} width="100%" src={wrangler}></img>
             )}

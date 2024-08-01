@@ -22,7 +22,7 @@ const Mystery = () => {
                 <>
                     <h1>BLOMMOR!</h1>
                     <p>*Du får såklart riktiga blommor också, inte bara digitala.</p>
-                    <img width={"100%"} src={flowers}></img>
+                    <img alt='' width={"100%"} src={flowers}></img>
                 </>)}
 
 
